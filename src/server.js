@@ -32,7 +32,7 @@ server.get("/", (req, res) => {
 server.get("/create-point", (req, res) => {
     // req.query: Query Strings da nossa url
     // console.log(req.query)
-    return res.render("create-point.html", {saved: true})
+    return res.render("create-point.html")
 }) 
 
 server.post("/savepoint", (req, res) => {
@@ -69,7 +69,7 @@ server.post("/savepoint", (req, res) => {
         else {
         console.log("Cadastrado com sucesso")
         console.log(this)
-        return res.render("create-point.html")
+        return res.render("create-point.html", {saved: true})
         }
     }
 

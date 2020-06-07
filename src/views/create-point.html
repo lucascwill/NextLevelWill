@@ -8,7 +8,7 @@
 
 {% block styles %}
     <link rel="stylesheet" href="/styles/create-point.css">
-    <link rel="stylesheet" href="/styles/modalint.css">
+    <link rel="stylesheet" href="/styles/modal.css">
 {% endblock styles %}
 
 {% block content %}
@@ -111,12 +111,6 @@
         {%include "partials/point-created.html"%}
     {% endif %}
 {% endblock modal %}
-
-{# {% block modal %}
-    {% if saved %}
-        {%include "partials/point-error.html"%}
-    {% endif %}
-{% endblock modal %} #}
 
 {% block scripts %}
     <script src="scripts/create-point.js"></script>
